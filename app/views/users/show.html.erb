@@ -1,0 +1,6 @@
+<h1>Welcome to <%= @user.name %>'s page!</h1>
+<% if @user.hosted_events.any? %>
+  <h3>Events:</h3>
+  <%= render @hosted_events %>
+<% end %>
+
